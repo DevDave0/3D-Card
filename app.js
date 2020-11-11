@@ -25,3 +25,15 @@ container.addEventListener("mouseenter", (e) => {
   sizes.style.transform = "translateZ(100px)";
   purchase.style.transform = "translateZ(75px)";
 });
+
+//Animate Out
+container.addEventListener("mouseleave", (e) => {
+  card.style.transition = "all 0.5s ease";
+  card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  //Popback
+  title.style.transform = "translateZ(0px)";
+  sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
+  description.style.transform = "translateZ(0px)";
+  sizes.style.transform = "translateZ(0px)";
+  purchase.style.transform = "translateZ(0px)";
+});
